@@ -95,4 +95,21 @@ if (player1.deck[i].value > player2.deck.shift()) {
   player1.deck.shift();
   player2.deck.push(player1.deck.shift());
   console.log("Player 2 Wins");
-} else player1.deck[i].value === player2.deck[i].value;
+} else (player1.deck[i].value === player2.deck[i].value) {
+    war() {
+
+    }
+}
+
+//Game loads up when the window opens//
+
+window.onload =
+shuffle(deck);
+splitDeck(deck);
+
+compareCards();
+let player1Card = player1.deck.shift();
+let player2Card = player2.deckshift();
+
+// cardsInPlay = (player1Card, player2Card)
+
