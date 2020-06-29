@@ -78,3 +78,21 @@ function splitDeck(deck) {
     }
   }
 }
+
+//War//
+
+function war(i) {
+  player1.deck[i];
+}
+
+//What happens when Player 1 or Player 2 wins hand//
+
+if (player1.deck[i].value > player2.deck.shift()) {
+  player2.deck.shift();
+  player1.deck.push(player2.deck.shift());
+  console.log("Player 1 Wins");
+} else if (player2.deck[i].value > player1.deck[i].value) {
+  player1.deck.shift();
+  player2.deck.push(player1.deck.shift());
+  console.log("Player 2 Wins");
+} else player1.deck[i].value === player2.deck[i].value;
