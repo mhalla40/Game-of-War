@@ -29,3 +29,17 @@ let cards = [
   "Ace",
 ];
 let deck = [];
+
+//Deck shuffle//
+
+function shuffle(deck) {
+  for (
+    var j, x, i = deck.length;
+    i;
+    j = Math.floor(Math.random() * i),
+      x = deck[--i],
+      deck[i] = deck[j],
+      deck[j] = x
+  );
+  return deck;
+}
