@@ -111,5 +111,5 @@ compareCards();
 let player1Card = player1.deck.shift();
 let player2Card = player2.deckshift();
 
-// cardsInPlay = (player1Card, player2Card)
+ cardsInPlay = (player1Card, player2Card)
 
