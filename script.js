@@ -43,3 +43,20 @@ function shuffle(deck) {
   );
   return deck;
 }
+
+//Store the cards in an array that will be compared after flipped//
+
+let cardsInPlay = [];
+
+//Loop to go through the deck of cards//
+
+for (let i = 0; i < suits.length; i++) {
+  for (let j = 0; j < cards.length; j++) {
+    let card = {
+      rank: cards[j],
+      suits: suits[i],
+      value: j,
+    };
+    deck.push(card);
+  }
+}
