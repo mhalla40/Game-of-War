@@ -48,6 +48,12 @@ function shuffle(deck) {
 
 let cardsInPlay = [];
 
+//function to flip the cards//
+
+function compareCards() {
+  let cardsInPlay = player1.deck.shift() + player2.deck.shift;
+}
+
 //Loop to go through the deck of cards//
 
 for (let i = 0; i < suits.length; i++) {
@@ -58,5 +64,17 @@ for (let i = 0; i < suits.length; i++) {
       value: j,
     };
     deck.push(card);
+  }
+}
+
+//Deal//
+
+function splitDeck(deck) {
+  for (let i = 0; i < deck.length; i++) {
+    if (i < 26) {
+      player1.deck.push(deck[i]);
+    } else {
+      player2.deck.push(deck[i]);
+    }
   }
 }
